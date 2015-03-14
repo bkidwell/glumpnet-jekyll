@@ -22,3 +22,7 @@ In Ubuntu/Linux Mint...
 
         cd $PROJECTPATH
         jekyll serve
+
+## Development Notes
+
+See `./_plan/plan.ctb` (CherryTree XML document).

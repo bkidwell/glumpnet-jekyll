@@ -15,7 +15,7 @@ markdown: kramdown
 
 ## my settings
 
-exclude: ["*.sublime-*", "README.md"]
+exclude: ["*.sublime-*", "README.md", "_plan"]
 timezone: America/New_York
 permalink: "/:categories/:title"
 
