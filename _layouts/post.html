@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {% if page.comments %}
+  <div class="comments">
+    comments:
+    <?php
+    $page_guid = '{{ page.guid }}';
+    $page_title = '{{ page.title }}';
+    include '/lib/comments.php';
+    ?>
+  </div>
+  {% endif %}
+
+</div>
